@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: initial;
+    overflow-x: hidden;
+
+}
+html, body{
+    width: 100%;
+    min-height: 100%;
+}
+
+body{
+    background-color: #fff;
+
+
+}
+#preloader{
+    background: #000 url(img/circle-loader.gif) no-repeat center center;
+    background-size: 15%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+nav{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    height: 7vh;
+    z-index: 10;
+    position: fixed;
+}
+.logo{
+    width: 5%;
+
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+nav ul li{
+    margin-right: 3rem;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 600;
+    list-style: none;
+}
+
+nav ul li:hover{
+    color: #ff0000;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+
+nav button{
+    background-color: #ff0000;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    margin-top: 12px;
+    padding: 0px 10px ;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================================================================== */
+
+.aboutbackground{
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.aboutbackground .aboutIcons .icon1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+ 
+}
+
+.aboutbackground .aboutIcons .icon2 {
+    position: absolute;
+    top: 400px;
+    left: 250px;
+ 
+}
+
+.aboutbackground .aboutIcons .icon3 {
+    position: absolute;
+    top: 100px;
+    left: 750px;
+ 
+}
+
+.aboutbackground .aboutIcons .icon4 {
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+ 
+}
+
+
+
+.aboutbackground .image img{
+    border: 2px solid #000;
+    border-top: none;
+    margin-left: 25%;
+
+}
+
+
+
+.aboutbackground h1{
+    position: absolute;
+    top: 250px ;
+    left: 15% ;
+    font-size: 4rem;
+    color: #000;
+    background-color: #fff;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 100;
+}
+
+.aboutbackground h2{
+    position: absolute;
+    color: #000;
+    top: 250px ;
+    left: 53% ;
+    font-size: 4rem;
+    background-color: #fff;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 100;
+
+}
+
+/* ========================================================================================================== */
+
+ .aboutContainer{
+    margin: 3%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    height: 60vh;
+}
+
+.about .aboutContainer{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    height: 60vh;
+}
+.about .aboutContainer .image {
+    position: relative;
+
+}
+
+.about .aboutContainer .image img{
+    transform: scaleX(-1);
+    z-index: 4;
+    height: 60vh;
+    position: absolute;
+}
+.about .aboutText h1{
+    width: 55%;
+    color: #000;
+    margin-left:60% ;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    font-size: 2rem;
+    position: relative;
+}
+.about .aboutText h1::before{
+    content: '';
+    width: 10%;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.about .aboutText p{
+    width: 55%;
+    color: #000;
+    margin-left:40% ;
+    margin-bottom: 2%;
+}
+
+
+.about .image .whitebox{
+    width: 200px;
+    height: 250px;
+    background-color: #ff0000;
+    position: absolute;
+    z-index: 2;
+    animation: aboutBox 10s infinite ease-in-out;
+}
+
+@keyframes aboutBox {
+    0% { top: 0px; left: 0px;
+        background-color: aqua;}
+    20% { top: 0px; left: 150px;}
+    25% { top: 0px; left: 150px;}
+    45% { top: 150px; left: 150px;
+        background-color: #ff0000;}
+    50% { top: 150px; left: 150px;}
+    75% { top: 150px; left: 0px;}
+    100% { top: 0px; left: 0px;
+     background-color: aqua;}
+
+}
+
+/* ======================================================================================================================= */
+
+#project{
+    background: url(img/background\ \(2\).png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    min-height: 50vh;
+    display: flex;
+
+
+}
+
+#project .all{
+    color: #fff;
+    display: flex;
+    min-width: 70vw;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 15%;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+
+
+/* ======================================================================================================================= */
+
+#aboutContact{
+    background: #000 no-repeat;
+    width: 100vw;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 100px 10px 200px;
+}
+
+#aboutContact .ContactTitle h3{
+   font-size: 2rem;
+   color: #ff0000;
+   padding-bottom: 10px;
+
+}
+
+#aboutContact .ContactDetail h3{
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+#aboutContact .ContactDetail h4 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+#aboutContact .location .ContactDetail h3{
+    font-weight: 400;
+    padding-bottom: 5px;
+    font-size: 1rem;
+}
+
+
+#aboutContact .aboutIcons .icon1 {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    opacity: 0.6;
+}
+
+#aboutContact .aboutIcons .icon2 {
+    position: absolute;
+    top: 0px;
+    left: 450px;
+    opacity: 0.6;
+}
+#aboutContact .aboutIcons .icon3 {
+    position: absolute;
+    top: 30px;
+    left: 850px;
+    opacity: 0.6;
+}
+
+#aboutContact .aboutIcons .icon4 {
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    opacity: 0.6;
+}
