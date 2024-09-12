@@ -90,7 +90,7 @@ nav button{
 
 
 .headbackground{
-    background: url(img/Group\ 4.png) no-repeat;
+    background: url(img/Group.png) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -124,15 +124,7 @@ nav button{
     animation-timeline: view();
 }
 
-@keyframes photoFramer{
-    0%{
-        margin-left: 0px;
-    }
 
-    100{
-        margin-left: -500px;
-    }
-}
 
 
 
