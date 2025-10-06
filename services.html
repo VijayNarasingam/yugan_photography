@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Services</title>
+    <link rel="stylesheet" href="services.css">
+
+</head>
+<body>
+    <nav class='flex '>
+        <div class='logo'>
+            <img src="img/logo.png" alt="" />
+        </div>
+        <div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="services.html"><li>Services</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="about.html#aboutContact"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div>
+        <a href="https://forms.visme.co/formsPlayer/y4vo60d4-yugan-photography-booking-page"> <button>Book Now</button></a>
+  
+        </div>
+  
+       </nav>
+
+       <div class="container">
+        <h2>Our Photography Services</h2>
+        <p>Professional photography services tailored to capture your special moments with artistic excellence.</p>
+        
+        <div class="services">
+            <div class="service-card">
+                <div class="icon">❤️</div>
+                <h3>Wedding Photography</h3>
+                <p>Capturing your special day with elegance and style. Complete coverage of ceremonies and celebrations.</p>
+                <ul>
+                    <li>Pre-wedding shoots</li>
+                    <li>Ceremony coverage</li>
+                    <li>Reception moments</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">🧑</div>
+                <h3>Portrait Photography</h3>
+                <p>Professional portraits that capture personality and essence in studio or location settings.</p>
+                <ul>
+                    <li>Individual portraits</li>
+                    <li>Family sessions</li>
+                    <li>Professional headshots</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">📅</div>
+                <h3>Event Photography</h3>
+                <p>Professional coverage for corporate events, parties, and special occasions.</p>
+                <ul>
+                    <li>Corporate events</li>
+                    <li>Private parties</li>
+                    <li>Concert photography</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="packages">
+            <h2>Photography Packages</h2>
+            <p>Choose the perfect package that suits your photography needs</p>
+            <div class="services">
+                <div class="package-card">
+                    <div class="package-header">Basic Package</div>
+                    <h3>$299</h3>
+                    <p>Perfect for small events</p>
+                    <ul>
+                        <li>2 Hours Coverage</li>
+                        <li>50 Digital Photos</li>
+                        <li>Basic Editing</li>
+                        <li>Digital Delivery</li>
+                    </ul>
+                    <button class="choose-plan">Choose Plan</button>
+                </div>
+                
+                <div class="package-card pro-package">
+                    <div class="package-header">Pro Package</div>
+                    <h3>$599</h3>
+                    <p>Most Popular Choice</p>
+                    <ul>
+                        <li>4 Hours Coverage</li>
+                        <li>150 Digital Photos</li>
+                        <li>Advanced Editing</li>
+                        <li>Online Gallery</li>
+                        <li>Print Release</li>
+                    </ul>
+                    <button class="choose-plan">Choose Plan</button>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">Premium Package</div>
+                    <h3>$999</h3>
+                    <p>Complete Coverage</p>
+                    <ul>
+                        <li>8 Hours Coverage</li>
+                        <li>300+ Digital Photos</li>
+                        <li>Premium Editing</li>
+                        <li>Online Gallery</li>
+                        <li>Print Release</li>
+                        <li>Photo Album</li>
+                    </ul>
+                    <button class="choose-plan">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // toggle nav blur on scroll
+        (function(){
+            const nav = document.querySelector('nav');
+            if(!nav) return;
+            const threshold = 20; // px
+            function onScroll(){
+                if(window.scrollY > threshold) nav.classList.add('scrolled');
+                else nav.classList.remove('scrolled');
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
+    </script>
+</body>
+</html>

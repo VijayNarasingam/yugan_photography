@@ -101,10 +101,16 @@
                 <p data-aos="slide-up"
                    data-aos-duration="1000"
                    data-aos-delay="100"
-                   >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus commodi dignissimos reiciendis? Sint, incidunt itaque modi, labore amet est ea nisi, quasi dolore dolorem tenetur vero aspernatur id eaque sapiente!</p>
+                   >At Yugan Photography, we believe that every moment is worth capturing. From the magic of weddings to the joy of birthday parties, the raw beauty of candid shots, and the excitement of every special event, we are here to help you preserve your most cherished memories</p>
                 <p data-aos="slide-up"
                    data-aos-duration="1000"
-                   data-aos-delay="100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus commodi dignissimos reiciendis? Sint, incidunt itaque modi, labore amet est ea nisi, quasi dolore dolorem tenetur vero aspernatur id eaque sapiente!</p>
+                   data-aos-delay="100">Our team of skilled photographers is passionate about telling your unique story through beautiful imagery. With years of experience and a keen eye for detail, we aim to capture those fleeting, yet priceless moments—whether it’s the first look at the altar, the burst of laughter during a birthday toast, or an unposed candid shot that speaks volumes.</p>
+                   <p data-aos="slide-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="100">We take pride in our ability to blend professionalism with a relaxed, friendly approach, allowing you to feel comfortable and at ease while we work. Our goal is not just to take pictures, but to create timeless memories that you and your loved ones can treasure for years to come.</p>
+                   <p data-aos="slide-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="100">Whether it’s an intimate wedding, a milestone birthday, or any special occasion, we approach each shoot with creativity and care, tailoring our services to fit your personal style and vision. We are committed to turning your moments into lasting works of art.</p>   
 
             
             </div>
@@ -178,6 +184,20 @@
       loader.style.display="none";
     })
 
+  </script>
+  <script>
+    // toggle nav blur on scroll
+    (function(){
+      const nav = document.querySelector('nav');
+      if(!nav) return;
+      const threshold = 20; // px
+      function onScroll(){
+        if(window.scrollY > threshold) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
   </script>
 </body>
 </html>

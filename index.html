@@ -22,7 +22,7 @@
       <div>
           <ul>
               <a href="index.html"><li>Home</li></a>
-              <a href="#services"><li>Services</li></a>
+              <a href="services.html"><li>Services</li></a>
               <a href="about.html"><li>About</li></a>
               <a href="about.html#aboutContact"><li>Contact</li></a>
           </ul>
@@ -58,7 +58,7 @@
                 <img src="img/wedding.jpg" alt="" />
                     <div class="info">
                     <h1>Wedding</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Capturing the Magic of Your Special Day</p>
                     <a href="#" class='btn'>Read More</a>
                     </div>
             </div>
@@ -67,7 +67,7 @@
                 <img src="img/birthday.jpg" alt="" />
                 <div class="info">
                     <h1>Birthday</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Celebrating Joyful Moments and Memories</p>
                     <a href="#" class='btn'>Read More</a>
                     </div>
             </div>
@@ -75,8 +75,8 @@
             <div class="box1">
                 <img src="img/IMG_0821.jpg" alt="" />
                 <div class="info">
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h1>Event</h1>
+                    <p>Turning Every Event into a Beautiful Memory</p>
                     <a href="#" class='btn'>Read More</a>
                     </div>
             </div>
@@ -84,8 +84,8 @@
             <div class="box1">
                 <img src="img/IMG_1179.jpg" alt="" />
                 <div class="info">
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h1>Candid</h1>
+                    <p>Authentic, Unscripted Moments Frozen in Time</p>
                     <a href="#" class='btn'>Read More</a>
                     </div>
             </div>
@@ -116,10 +116,10 @@
 <!-- {/* ==================================================================================================================== */} -->
 <section class="sentence">
   <div class="collectText" >
-      <h3>Text line</h3>
-      <h1>Related sentence ir tipocs</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <button >Read more  <span>►</span> </button>
+      <h3>Stories worth keeping</h3>
+      <h1>We capture the moments you want to remember</h1>
+      <p>From candid laughter to carefully composed portraits, our goal is to freeze the emotions that make each moment unique. Whether it's a wedding, birthday, or everyday family time, we work with you to create images that feel personal and timeless.</p>
+      <button>See our work <span>►</span></button>
   </div>
 
 </section>
@@ -127,9 +127,9 @@
 <section class="show">
       <div class="alltext">
         <div class="card1" data-aos="slide-left" data-aos-duration="1000"  >
-          <h1>Photography</h1>
-          <h3>Art was not make, It's</h3>
-          <h1>Creates</h1>
+          <h1>Professional photography services</h1>
+          <h3> that tell your unique story through the lens of artistic excellence </h3>
+          <h1>Moments</h1>
         </div>
 
         <div class="card2" data-aos="fade-up" data-aos-duration="1000">
@@ -204,6 +204,20 @@
       loader.style.display="none";
     })
 
+  </script>
+  <script>
+    // toggle nav blur on scroll
+    (function(){
+      const nav = document.querySelector('nav');
+      if(!nav) return;
+      const threshold = 20; // px
+      function onScroll(){
+        if(window.scrollY > threshold) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
   </script>
 </body>
 </html>
